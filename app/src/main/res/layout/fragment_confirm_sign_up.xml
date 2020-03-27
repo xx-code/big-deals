@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".screen.ConfirmSignIn.ConfirmSignUp"
+        android:background="@color/colorSecondary">
+
+        <ImageView
+            android:id="@+id/icon_confirm_sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="92dp"
+            android:src="@drawable/ic_check_circle_24dp"
+            app:layout_constraintEnd_toEndOf="@+id/text_confirm_sign_up"
+            app:layout_constraintStart_toStartOf="@+id/text_confirm_sign_up"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_confirm_sign_up"
+            android:layout_width="302dp"
+            android:layout_height="118dp"
+            android:layout_marginTop="76dp"
+            android:fontFamily="@font/roboto"
+            android:lineSpacingExtra="5sp"
+            android:text="@string/confirm_sign_up"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/icon_confirm_sign_up" />
+
+        <Button
+            android:id="@+id/btn_confirm_sign_up"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="32dp"
+            android:background="@drawable/confirm_sign_up_button"
+            android:text="@string/sign_in"
+            android:textAllCaps="false"
+            android:textColor="@color/colorSecondaryDark"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_confirm_sign_up"
+            app:layout_constraintVertical_bias="0.329" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

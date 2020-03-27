@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_main"
+    app:startDestination="@id/choose_sign_in">
+    <fragment
+        android:id="@+id/choose_sign_in"
+        android:name="com.example.juniortiemele.bigdeals.screen.ChooseSignIn.ChooseSignIn"
+        android:label="FragmentChooseSignIn"
+        tools:layout="@layout/fragment_choose_sign_in">
+        <action
+            android:id="@+id/action_choose_sign_in_to_main_application"
+            app:destination="@id/main_application" />
+        <action
+            android:id="@+id/action_choose_sign_in_to_sign_in"
+            app:destination="@id/sign_in" />
+    </fragment>
+    <fragment
+        android:id="@+id/sign_in"
+        android:name="com.example.juniortiemele.bigdeals.screen.SignIn.SignIn"
+        android:label="FragmentSignIn">
+        <action
+            android:id="@+id/action_sign_in_to_sign_up"
+            app:destination="@id/sign_up" />
+        <action
+            android:id="@+id/action_sign_in_to_main_application"
+            app:destination="@id/main_application" />
+    </fragment>
+    <fragment
+        android:id="@+id/sign_up"
+        android:name="com.example.juniortiemele.bigdeals.screen.SignUp.SignUp"
+        android:label="FragmentSignUp"
+        tools:layout="@layout/fragment_sign_up">
+        <action
+            android:id="@+id/action_sign_up_to_confirm_sign_up"
+            app:destination="@id/confirm_sign_up" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirm_sign_up"
+        android:name="com.example.juniortiemele.bigdeals.screen.ConfirmSignIn.ConfirmSignUp"
+        android:label="FragmentConfirmSignUp"
+        tools:layout="@layout/fragment_confirm_sign_up">
+        <action
+            android:id="@+id/action_confirm_sign_up_to_choose_sign_in"
+            app:destination="@id/choose_sign_in" />
+    </fragment>
+    <fragment android:id="@+id/main_application" />
+</navigation>

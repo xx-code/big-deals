@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Big Deals</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_in_with_google">Sign in with google</string>
+    <string name="sign_in_with_facebook">Sign in with Facebook</string>
+    <string name="sign_in_with_email">Sign in with Email</string>
+    <string name="your_email_adress">Your email adress</string>
+    <string name="your_password">Your password</string>
+    <string name="forget_password">Do you forget your password?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="you_havent_account">You haven\'t account!</string>
+    <string name="confirm_password">Confirm your password</string>
+    <string name="date_of_birthday">Date of birthday (dd/mm/yyyy)</string>
+    <string name="phone_number">Your phone number</string>
+    <string name="done">Done</string>
+    <string name="confirm_sign_up">Congratulation you are done  your inscription. you will recevied an email to confirm your account to have access at the application.</string>
+</resources>
